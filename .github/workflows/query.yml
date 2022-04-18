@@ -1,0 +1,17 @@
+name: Shell Commands
+on: [push]
+jobs:
+  run-Shell-Command1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a string
+        run: |
+          echo "Hi, Welcome to the Github Project"
+          echo "This Project displays the version of node & npm"
+  run-Shell-Commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Give the version of node and npm
+        run: |
+          node -v
+          npm -v
